@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ng-otp-ui": [
+        "dist/ng-otp-ui/ng-otp-ui",
+        "dist/ng-otp-ui"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
