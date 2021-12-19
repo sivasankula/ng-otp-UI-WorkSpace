@@ -7,5 +7,30 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "author": {
+    "email": "sankulashiva09@gmail.com",
+    "name": "Siva Sankula",
+    "url": "https://github.com/sivasankula/ng-otp-UI-WorkSpace"
+  },
+  "contributors": [
+    {
+      "email": "sankulashiva09@gmail.com",
+      "url": "https://github.com/sivasankula/ng-otp-UI-WorkSpace",
+      "name": "Siva Sankula"
+    }
+  ],
+  "keywords": [
+    "ng otp",
+    "ng-otp",
+    "otp-ui-verify",
+    "otp-check",
+    "verify otp",
+    "ng-otp form",
+    "ng-otp-UI",
+    "ng-otp",
+    "angular otp form",
+    "angular otp validate",
+    "vslidate otp"
+  ]
 }

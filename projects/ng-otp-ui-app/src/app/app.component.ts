@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-otp-UI-app';
+
+  otp:any
+  
+  recievedOTP(eve:any){
+    console.log("app",eve)
+    this.otp = eve
+  }
+
+  submitOtp(){
+    console.log(this.otp)
+  }
 }

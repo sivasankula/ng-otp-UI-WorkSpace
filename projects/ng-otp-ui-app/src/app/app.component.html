@@ -1,1 +1,13 @@
-<Ss-ng-otp-UI></Ss-ng-otp-UI>
+
+<div>
+    Verify otp
+    <div>
+        please enter the otp here
+    </div>
+    <div>
+        <Ss-ng-otp-UI length="6" (otpSent)="recievedOTP($event)"></Ss-ng-otp-UI>
+    </div>
+    <div>
+        <button (click)="submitOtp()">save</button>
+    </div>
+</div>
