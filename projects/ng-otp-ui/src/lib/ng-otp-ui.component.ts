@@ -10,7 +10,7 @@ export class NgOtpUIComponent implements OnInit {
   @Input()
   length?: any
 
-  @Output() otpSent: EventEmitter<any> = new EventEmitter;
+  @Output() onInputChange: EventEmitter<any> = new EventEmitter;
   
   otpLength:any
   otpForm!:FormGroup
@@ -38,7 +38,8 @@ export class NgOtpUIComponent implements OnInit {
         newOtp.push(JSON.parse(otpEntered[i]))
       }
     }
-    this.otpSent.emit(newOtp)
+    this.otpLength == newOtp.length ?  this.onInputChange.emit(newOtp) :  null
+   
   }
 
 }

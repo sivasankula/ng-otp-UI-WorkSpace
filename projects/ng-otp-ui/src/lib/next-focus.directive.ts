@@ -19,6 +19,7 @@ export class NextFocusDirective {
     if(keyboardEvent.key === 'ArrowLeft'){
       try{
         (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+        (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
       return;
       }
       catch{
@@ -28,6 +29,7 @@ export class NextFocusDirective {
     if(keyboardEvent.key === 'Tab'){
       try{
         (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+        (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).select()
       return;
       }
       catch{
@@ -39,6 +41,7 @@ export class NextFocusDirective {
       if(keyboardEvent.key === 'Backspace'){
         try{
           (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+          (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
         return;
         }
         catch{
@@ -49,6 +52,7 @@ export class NextFocusDirective {
       else if(keyboardEvent.key === 'ArrowLeft'){
         try{
           (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+          (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
         return;
         }
         catch{
@@ -58,6 +62,7 @@ export class NextFocusDirective {
       else if(keyboardEvent.key === 'ArrowRight'){
         try{
           (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+          (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).select()
         return;
         }
         catch{
@@ -67,6 +72,7 @@ export class NextFocusDirective {
       else if(keyboardEvent.key === 'Delete'){
         try{
           (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+          (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
         return;
         }
         catch{
@@ -82,6 +88,7 @@ export class NextFocusDirective {
      if(keyboardEvent.key === 'ArrowRight' || keyboardEvent.key === 'Tab'){
        try{
         (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+        (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
         return;
        }
        catch{
@@ -92,6 +99,7 @@ export class NextFocusDirective {
      else if(keyboardEvent.key === 'ArrowLeft' || keyboardEvent.key ==='Backspace'){
        try{
         (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+        (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
         return;
        }
       catch{
@@ -102,6 +110,7 @@ export class NextFocusDirective {
       if ((nextElementSibling as HTMLInputElement | HTMLTextAreaElement).type === type) {
         try{
           (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+          (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).select();
           return;
         }
         catch{
