@@ -36,6 +36,16 @@ export class NextFocusDirective {
         return
       }
     }
+    if(keyboardEvent.key === 'Backspace'){
+      try{
+        (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+        (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).select()
+      return;
+      }
+      catch{
+        return
+      }
+    }
    
     if (!target || target.maxLength !== target.value.length) {
       if(keyboardEvent.key === 'Backspace'){

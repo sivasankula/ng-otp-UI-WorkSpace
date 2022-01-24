@@ -31,15 +31,15 @@ export class NgOtpUIComponent implements OnInit {
   }
 
   otpEnteredKey(eve:any){
-    const otpEntered:any = Object.values(this.otpForm.value)
-    let newOtp = []
-    for(let i = 0 ; i < otpEntered.length ; i++ ) {
-      if(otpEntered[i] !== ''){
-        newOtp.push(JSON.parse(otpEntered[i]))
+    if(eve.key !== 'Tab' || eve.key !== 'ArrowRight' || eve.key !== 'ArrowLeft' || eve.key !== 'Backspace'){
+      const otpEntered:any = Object.values(this.otpForm.value)
+      let newOtp = []
+      for(let i = 0 ; i < otpEntered.length ; i++ ) {
+        if(otpEntered[i] !== ''){
+          newOtp.push(JSON.parse(otpEntered[i]))
+        }
       }
+      this.otpLength == newOtp.length ?  this.onInputChange.emit(newOtp) :  null
     }
-    this.otpLength == newOtp.length ?  this.onInputChange.emit(newOtp) :  null
-   
   }
-
 }

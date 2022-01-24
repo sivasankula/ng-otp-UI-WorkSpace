@@ -14,6 +14,9 @@ export class AppComponent {
     console.log("app",eve)
     this.otp = eve
   }
+  recievedOTP1(eve:any){
+    console.log(eve)
+  }
 
   submitOtp(){
     console.log(this.otp)
