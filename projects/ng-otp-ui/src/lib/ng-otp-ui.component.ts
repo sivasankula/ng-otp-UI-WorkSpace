@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'Ss-ng-otp-UI',
+  selector: 'SS-ng-otp-UI',
   templateUrl:'ng-otp-ui.component.html',
   styleUrls:['ng-otp-ui.component.scss']
 })
